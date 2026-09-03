@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md. Nafis Salman | Cyber Security Engineer &amp; Incident Responder</title>
+  <meta name="description" content="Portfolio of Md. Nafis Salman - Engineer, Incident Responder at Express Systems Limited. 8+ years in IT with a focus on cyber security, SIEM/XDR/EDR monitoring, incident response and vulnerability assessment." />
+  <meta name="author" content="Md. Nafis Salman" />
+  <meta name="theme-color" content="#0a0f1a" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Md. Nafis Salman | Cyber Security Engineer &amp; Incident Responder" />
+  <meta property="og:description" content="8+ years in IT, specialising in incident response, SIEM/XDR/EDR and vulnerability assessment." />
+  <meta property="og:image" content="assets/img/profile.jpg" />
+
+  <!-- Inline SVG favicon (shield) keeps the site dependency free -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0f1a'/%3E%3Cpath d='M16 5l9 3.2v7.4c0 5.6-3.7 9.6-9 11.4-5.3-1.8-9-5.8-9-11.4V8.2L16 5z' fill='none' stroke='%2322d3ee' stroke-width='2'/%3E%3Cpath d='M11.5 16.2l3.2 3.2 6-6.4' fill='none' stroke='%2334d399' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Applied before first paint: removes the no-JS fallback and restores
+       the saved theme so the page never flashes the wrong colours. -->
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.remove('no-js');
+      try {
+        var saved = window.localStorage.getItem('nafis-portfolio-theme');
+        if (saved === 'light' || saved === 'dark') {
+          root.setAttribute('data-theme', saved);
+        } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+          root.setAttribute('data-theme', 'light');
+        }
+      } catch (err) {
+        /* storage unavailable - keep the default dark theme */
+      }
+    }());
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand" aria-label="Md. Nafis Salman - home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" focusable="false">
+            <path d="M12 2.5l7.5 2.6v6.2c0 4.7-3.1 8-7.5 9.5-4.4-1.5-7.5-4.8-7.5-9.5V5.1L12 2.5z"
+                  fill="none" stroke="currentColor" stroke-width="1.7" />
+            <path d="M8.6 12.2l2.6 2.6 4.5-5" fill="none" stroke="currentColor"
+                  stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+        <span class="brand-text">Nafis<span class="accent">.</span>Salman</span>
+      </a>
+
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#credentials">Credentials</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="theme-toggle" type="button"
+                aria-label="Switch to light theme" aria-pressed="false" title="Toggle theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path d="M20 14.5A8.5 8.5 0 019.5 4a8.5 8.5 0 1010.5 10.5z" fill="none"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8" />
+            <path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4L17 7M7 17l-1.6 1.6"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+        </button>
+
+        <button class="nav-toggle" id="nav-toggle" type="button"
+                aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation menu">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+      </div>
+    </div>
+    <div class="scroll-progress" id="scroll-progress" role="presentation"></div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow" data-reveal>
+            <span class="status-dot" aria-hidden="true"></span>
+            Currently at Express Systems Limited
+          </p>
+          <h1 class="hero-title" data-reveal>
+            Md. Nafis Salman
+          </h1>
+          <p class="hero-role" data-reveal>
+            <span class="typed" id="typed" aria-live="polite"></span><span class="caret" aria-hidden="true"></span>
+          </p>
+          <p class="hero-text" data-reveal>
+            Cyber security practitioner with <strong>8+ years</strong> in the IT industry &mdash; incident
+            response, security monitoring and vulnerability assessment. M.Sc. in Cyber Security,
+            CEHv12 / ECIH / CSA / CHFI certified. Goal: to become a leading cyber security professional.
+          </p>
+
+          <ul class="hero-meta" data-reveal>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 10-14 0c0 4.9 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+              Rampura, Banasree, Dhaka-1219, Bangladesh
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3.6 6.4l8.4 6 8.4-6" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+              <a href="mailto:nafissalman.cse@gmail.com">nafissalman.cse@gmail.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h3l1.6 4-2 1.4a11.4 11.4 0 005.5 5.5l1.4-2 4 1.6v3a2 2 0 01-2.2 2A16.4 16.4 0 014.6 5.7 2 2 0 016.6 3.5z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+              <a href="tel:+8801680281293">+880 1680 281293</a>
+            </li>
+          </ul>
+
+          <div class="hero-cta" data-reveal>
+            <a class="btn btn-primary" href="#contact">
+              Get in touch
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M12.5 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="assets/docs/Md_Nafis_Salman_CV.pdf" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v10.5M7.5 11l4.5 4.5 4.5-4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Download CV
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-wrap" data-reveal>
+            <div class="avatar-ring" aria-hidden="true"></div>
+            <img class="avatar" src="assets/img/profile.jpg" width="295" height="280"
+                 alt="Portrait of Md. Nafis Salman" />
+          </div>
+          <dl class="quick-stats" data-reveal>
+            <div class="stat">
+              <dt>Years in IT</dt>
+              <dd><span class="counter" data-count-to="8">0</span><span class="plus">+</span></dd>
+            </div>
+            <div class="stat">
+              <dt>Certifications</dt>
+              <dd><span class="counter" data-count-to="5">0</span></dd>
+            </div>
+            <div class="stat">
+              <dt>Roles held</dt>
+              <dd><span class="counter" data-count-to="4">0</span></dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#about" aria-label="Scroll to About section">
+        <span class="mouse" aria-hidden="true"><span class="wheel"></span></span>
+      </a>
+    </section>
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-kicker">01 &mdash; Profile</p>
+          <h2 class="section-title">About me</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-copy" data-reveal>
+            <p>
+              More than <strong>8 years' experience in the IT industry</strong>, significantly in cyber
+              security consulting, software development, computer &amp; digital device manufacturing and
+              industrial automation, actively involved across different projects.
+            </p>
+            <p>
+              A strong information technology professional with a Bachelor of Science in Computer Science
+              &amp; Engineering and a Master's in Cyber Security, currently working at
+              <strong>Express Systems Limited</strong> as an Incident Responder.
+            </p>
+            <p>
+              Hands-on experience with Windows Server and Linux-based operating systems, and working
+              knowledge of SIEM (Stellar Cyber), Pentera, WAF (Radware), Wireshark, Nmap, Metasploit and
+              Oracle VirtualBox.
+            </p>
+
+            <dl class="detail-list">
+              <div><dt>Date of birth</dt><dd>02.11.1995</dd></div>
+              <div><dt>Nationality</dt><dd>Bangladeshi</dd></div>
+              <div><dt>Location</dt><dd>Dhaka, Bangladesh</dd></div>
+              <div><dt>Availability</dt><dd>Open to opportunities</dd></div>
+            </dl>
+          </div>
+
+          <aside class="about-side" data-reveal>
+            <div class="card focus-card">
+              <h3 class="card-title">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="1.1" fill="currentColor"/></svg>
+                Areas of focus
+              </h3>
+              <ul class="tick-list">
+                <li>Security monitoring &amp; alert triage (SIEM / XDR / EDR)</li>
+                <li>Incident response, containment &amp; remediation</li>
+                <li>Vulnerability assessment &amp; penetration testing</li>
+                <li>Red teaming &amp; security posture reviews</li>
+                <li>Security awareness training &amp; reporting</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-kicker">02 &mdash; Capabilities</p>
+          <h2 class="section-title">Technical skills</h2>
+          <p class="section-sub">Core competencies built across security operations, assessment and engineering roles.</p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="card skill-card" data-reveal>
+            <h3 class="card-title">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M4 12h16M4 17.5h10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              Security operations
+            </h3>
+            <ul class="skill-list">
+              <li><span class="skill-name">SIEM, XDR, EDR</span><span class="meter" data-level="90"><i></i></span></li>
+              <li><span class="skill-name">Security analysis</span><span class="meter" data-level="88"><i></i></span></li>
+              <li><span class="skill-name">Incident response</span><span class="meter" data-level="88"><i></i></span></li>
+              <li><span class="skill-name">Vulnerability assessment</span><span class="meter" data-level="85"><i></i></span></li>
+            </ul>
+          </article>
+
+          <article class="card skill-card" data-reveal>
+            <h3 class="card-title">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.2" y="4.5" width="17.6" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 19.5h8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              Systems &amp; networking
+            </h3>
+            <ul class="skill-list">
+              <li><span class="skill-name">Windows &amp; Linux OS</span><span class="meter" data-level="88"><i></i></span></li>
+              <li><span class="skill-name">Network protocols (TCP/IP, HTTP/S)</span><span class="meter" data-level="85"><i></i></span></li>
+              <li><span class="skill-name">Network types (LAN / WAN / MAN)</span><span class="meter" data-level="82"><i></i></span></li>
+              <li><span class="skill-name">App, DB &amp; network security</span><span class="meter" data-level="84"><i></i></span></li>
+            </ul>
+          </article>
+
+          <article class="card skill-card" data-reveal>
+            <h3 class="card-title">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7.5L4.5 12 9 16.5M15 7.5L19.5 12 15 16.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Engineering &amp; code
+            </h3>
+            <ul class="skill-list">
+              <li><span class="skill-name">Programming (Python)</span><span class="meter" data-level="80"><i></i></span></li>
+              <li><span class="skill-name">Git / GitHub</span><span class="meter" data-level="80"><i></i></span></li>
+              <li><span class="skill-name">OWASP Top 10</span><span class="meter" data-level="86"><i></i></span></li>
+              <li><span class="skill-name">Static analysis tools</span><span class="meter" data-level="78"><i></i></span></li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="tools-block" data-reveal>
+          <h3 class="tools-title">Tools &amp; technologies</h3>
+          <ul class="chip-list">
+            <li class="chip">SIEM &mdash; Stellar Cyber</li>
+            <li class="chip">Pentera</li>
+            <li class="chip">WAF &mdash; Radware</li>
+            <li class="chip">Wireshark</li>
+            <li class="chip">Nmap</li>
+            <li class="chip">Metasploit</li>
+            <li class="chip">Nessus</li>
+            <li class="chip">John the Ripper</li>
+            <li class="chip">Maltego</li>
+            <li class="chip">ZAP Proxy</li>
+            <li class="chip">Oracle VirtualBox</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-kicker">03 &mdash; Career</p>
+          <h2 class="section-title">Experience</h2>
+          <p class="section-sub">Eight years across security operations, consulting, manufacturing IT and industrial automation.</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <article class="card job">
+              <p class="job-period"><span class="badge badge-live">Current</span> 16 Aug 2025 &ndash; Continuing</p>
+              <h3 class="job-role">Engineer, Incident Responder</h3>
+              <p class="job-company">Express Systems Limited <span class="dot">&middot;</span> Dhaka Division, Bangladesh</p>
+              <ul class="job-points">
+                <li>Monitor and analyse security alerts and events.</li>
+                <li>Respond to cyber security incidents in a timely manner.</li>
+                <li>Collaborate with NOC and security teams to contain and remediate threats.</li>
+                <li>Document incidents and create detailed reports.</li>
+                <li>Identify and mitigate vulnerabilities in systems and networks.</li>
+                <li>Stay current with emerging threats and cyber security trends.</li>
+                <li>Provide recommendations for improving security posture.</li>
+                <li>Research the company's system and network structure.</li>
+                <li>Perform detailed vulnerability analysis and exploit known vulnerabilities to assess resilience against real-world threats.</li>
+                <li>Troubleshooting and issue resolution; incident reporting and management.</li>
+              </ul>
+            </article>
+          </li>
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <article class="card job">
+              <p class="job-period">Jun 2021 &ndash; Aug 2025</p>
+              <h3 class="job-role">Sr. Executive, Cyber Security Engineer</h3>
+              <p class="job-company">Dohatec New Media <span class="dot">&middot;</span> Dhaka Division, Bangladesh</p>
+              <ul class="job-points">
+                <li>Tested and identified network and system vulnerabilities; researched company system/network structure.</li>
+                <li>Performed detailed vulnerability analysis and exploited known vulnerabilities to assess real-world resilience.</li>
+                <li>Provided training and awareness programmes on cyber security risks, safe computing practices and incident response.</li>
+                <li>Participated in red teaming exercises to assess the organisation's overall security posture.</li>
+                <li>Contributed to development and enhancement of cyber security frameworks and methodologies.</li>
+                <li>Identified security issues through code review; troubleshot security and network problems.</li>
+                <li>Reported e-PMIS system issues to the senior security engineer; monitored in-house IT executives.</li>
+                <li>Researched and resolved software issues; escalated unresolved issues to appropriate internal teams.</li>
+                <li>Followed up with clients to ensure IT systems were fully functional after troubleshooting.</li>
+              </ul>
+            </article>
+          </li>
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <article class="card job">
+              <p class="job-period">Jan 2020 &ndash; May 2021</p>
+              <h3 class="job-role">Principal Officer, IT Security Engineer</h3>
+              <p class="job-company">Walton Group (Walton Digi-Tech Industries Limited) <span class="dot">&middot;</span> Bashundhara, Dhaka-1219</p>
+              <ul class="job-points">
+                <li>Monitored and analysed security alerts and logs to identify potential threats.</li>
+                <li>Assisted in developing and implementing security policies and procedures.</li>
+                <li>Collaborated with IT and other departments to ensure security best practices were followed.</li>
+                <li>Helped investigate and respond to security incidents.</li>
+                <li>Applied strong analytical skills to assess security threats and vulnerabilities.</li>
+                <li>Used tools including Nmap, ZAP Proxy, Metasploit, Wireshark, Nessus, John the Ripper and Maltego.</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <article class="card job">
+              <p class="job-period">Jan 2018 &ndash; Dec 2019</p>
+              <h3 class="job-role">Jr. Automation Engineer</h3>
+              <p class="job-company">Alphatek Engineering <span class="dot">&middot;</span> Motijheel, Tikatoli &mdash; Engineering Marketing</p>
+              <ul class="job-points">
+                <li>Delivered industrial automation projects: Shampoo Packing Machine Automation (Unilever BD), Freeze Compressor Machine Automation (Walton Bangladesh) and Complete Feed Mills Automation by SCADA.</li>
+                <li>Kept customer software up to date; visited industry sites and head offices to generate new business.</li>
+                <li>Prepared and submitted quotations, invoices and challans; handled customer queries.</li>
+                <li>Conducted market research, planning, customer visits and business negotiations.</li>
+                <li>Maintained healthy customer relations and delivered product presentations.</li>
+                <li>Performed truck-scale indicator calibration, cable preparation, software installation and parameter setting.</li>
+              </ul>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-kicker">04 &mdash; Selected work</p>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-sub">Academic and professional builds spanning cloud security research, web systems, games, embedded devices and industrial automation.</p>
+        </header>
+
+        <div class="projects-grid">
+          <article class="card project featured" data-reveal>
+            <p class="project-tag">M.Sc. project &mdash; Postgraduate</p>
+            <h3 class="project-title">An Approach against Detecting Co-residence using Network Probes in Cloud</h3>
+            <p class="project-desc">
+              Cyber security research on multi-tenant cloud infrastructure. An attacker can work out
+              which virtual machines share a physical host by timing network probes, and that
+              co-residence becomes the stepping stone to side-channel attacks. This project examines
+              those probing techniques and proposes a defensive approach that obscures the network
+              signals they rely on.
+            </p>
+            <ul class="tag-row">
+              <li>Cloud security</li>
+              <li>Multi-tenancy</li>
+              <li>Side-channel defence</li>
+              <li>Research</li>
+            </ul>
+          </article>
+
+          <article class="card project" data-reveal>
+            <p class="project-tag">Final year project &mdash; Undergraduate</p>
+            <h3 class="project-title">Automated Student Online Course Registration System</h3>
+            <p class="project-desc">
+              &ldquo;An Automated Student Online Course Registration System Integrated with Smart Class
+              Routine in Campus.&rdquo; A campus platform that automates course registration and generates
+              a conflict-free class routine.
+            </p>
+            <ul class="tag-row">
+              <li>Web system</li>
+              <li>Automation</li>
+              <li>Capstone</li>
+            </ul>
+          </article>
+
+          <article class="card project" data-reveal>
+            <p class="project-tag">Industrial automation</p>
+            <h3 class="project-title">Factory automation deliveries</h3>
+            <p class="project-desc">
+              Shampoo Packing Machine Automation for Unilever Bangladesh, Freeze Compressor Machine
+              Automation for Walton Bangladesh, and a complete Feed Mills automation solution driven
+              by SCADA.
+            </p>
+            <ul class="tag-row">
+              <li>SCADA</li>
+              <li>PLC</li>
+              <li>Calibration</li>
+            </ul>
+          </article>
+
+          <article class="card project" data-reveal>
+            <p class="project-tag">Game development</p>
+            <h3 class="project-title">Floppy Bird &amp; Baby Escape</h3>
+            <p class="project-desc">
+              A Floppy Bird clone built in Unity with C#, plus Baby Escape, a 2D escape game
+              implemented in Java.
+            </p>
+            <ul class="tag-row">
+              <li>Unity</li>
+              <li>C#</li>
+              <li>Java</li>
+            </ul>
+          </article>
+
+          <article class="card project" data-reveal>
+            <p class="project-tag">Embedded systems</p>
+            <h3 class="project-title">Voice Control Robot</h3>
+            <p class="project-desc">
+              An embedded systems project: a robot that interprets spoken commands and translates them
+              into movement through a microcontroller.
+            </p>
+            <ul class="tag-row">
+              <li>Embedded</li>
+              <li>Microcontroller</li>
+            </ul>
+          </article>
+
+          <article class="card project" data-reveal>
+            <p class="project-tag">Fundamentals</p>
+            <h3 class="project-title">Calculator application</h3>
+            <p class="project-desc">
+              A console calculator written in C, covering arithmetic operations, input validation and
+              structured program flow.
+            </p>
+            <ul class="tag-row">
+              <li>C</li>
+              <li>Algorithms</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ============ CREDENTIALS ============ -->
+    <section class="section" id="credentials">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-kicker">05 &mdash; Credentials</p>
+          <h2 class="section-title">Certifications, training &amp; workshops</h2>
+        </header>
+
+        <div class="cred-grid">
+          <article class="card cred-card" data-reveal>
+            <h3 class="card-title">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3.4v5.2c0 4.4-2.9 7.6-7 9-4.1-1.4-7-4.6-7-9V6.4L12 3z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8.8 12.3l2.4 2.4 4.1-4.6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Certifications
+            </h3>
+            <ul class="cred-list">
+              <li><span class="cred-name">Certified Ethical Hacker (CEHv12)</span><span class="cred-org">EC-Council</span></li>
+              <li><span class="cred-name">EC-Council Certified Incident Handler (ECIH)</span><span class="cred-org">EC-Council</span></li>
+              <li><span class="cred-name">Certified SOC Analyst (CSA)</span><span class="cred-org">EC-Council</span></li>
+              <li><span class="cred-name">Computer Hacking Forensic Investigator v11 (CHFI)</span><span class="cred-org">EC-Council</span></li>
+              <li><span class="cred-name">Ethical Hacker</span><span class="cred-org">Cisco</span></li>
+            </ul>
+          </article>
+
+          <article class="card cred-card" data-reveal>
+            <h3 class="card-title">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16v11H4zM4 10h16" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9 14h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              Training
+            </h3>
+            <ul class="cred-list">
+              <li><span class="cred-name">IT Training on Web Development</span><span class="cred-org">George Washington University, USA &mdash; 5 months</span></li>
+              <li><span class="cred-name">Professional ASP.NET Training</span><span class="cred-org">Daffodil International University &mdash; 5 months</span></li>
+              <li><span class="cred-name">Web UI &amp; Graphics Design</span><span class="cred-org">BASIS &mdash; 3 months</span></li>
+            </ul>
+          </article>
+
+          <article class="card cred-card" data-reveal>
+            <h3 class="card-title">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20a5 5 0 0110 0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="9" r="3.4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3.5 6.5h3M17.5 6.5h3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              Workshops
+            </h3>
+            <ul class="cred-list">
+              <li><span class="cred-name">AWS Cloud Workshop</span><span class="cred-org">Two days</span></li>
+              <li><span class="cred-name">Art of Effective Communication</span><span class="cred-org">Rotaract Club of Dhaka &mdash; one day</span></li>
+            </ul>
+          </article>
+
+          <article class="card cred-card" data-reveal>
+            <h3 class="card-title">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9.5" r="5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9 14l-1.4 6 4.4-2.4L16.4 20 15 14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+              Achievements &amp; conference
+            </h3>
+            <ul class="cred-list">
+              <li><span class="cred-name">Government of Bangladesh student scholarship</span><span class="cred-org">Awarded in Class Five &mdash; one of the proudest achievements of school life</span></li>
+              <li><span class="cred-name">Certified participant, 17th ICCIT</span><span class="cred-org">International Conference on Computer and Information Technology &mdash; 2014</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ============ EDUCATION ============ -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-kicker">06 &mdash; Academics</p>
+          <h2 class="section-title">Education</h2>
+        </header>
+
+        <div class="edu-grid">
+          <article class="card edu" data-reveal>
+            <p class="edu-years">2024 &ndash; 2025</p>
+            <h3 class="edu-degree">Master of Science in Cyber Security (M.Sc.)</h3>
+            <p class="edu-school">Bangladesh University of Professionals, Dhaka</p>
+            <p class="edu-grade"><span class="grade-pill">CGPA 3.29 / 4.00</span></p>
+          </article>
+
+          <article class="card edu" data-reveal>
+            <p class="edu-years">2014 &ndash; 2018</p>
+            <h3 class="edu-degree">B.Sc. in Computer Science &amp; Engineering</h3>
+            <p class="edu-school">Daffodil International University, Dhaka</p>
+            <p class="edu-grade"><span class="grade-pill">CGPA 2.92 / 4.00</span></p>
+          </article>
+
+          <article class="card edu" data-reveal>
+            <p class="edu-years">2011 &ndash; 2013</p>
+            <h3 class="edu-degree">Higher Secondary Certificate (Science)</h3>
+            <p class="edu-school">Royal Media College, Mymensingh</p>
+            <p class="edu-grade"><span class="grade-pill">CGPA 4.10 / 5.00</span></p>
+          </article>
+
+          <article class="card edu" data-reveal>
+            <p class="edu-years">2009 &ndash; 2011</p>
+            <h3 class="edu-degree">Secondary School Certificate (Science)</h3>
+            <p class="edu-school">Mrityunjoy School, Mymensingh</p>
+            <p class="edu-grade"><span class="grade-pill">CGPA 4.69 / 5.00</span></p>
+          </article>
+        </div>
+
+        <div class="ref-block" data-reveal>
+          <h3 class="tools-title">References</h3>
+          <div class="ref-grid">
+            <article class="card ref">
+              <h4 class="ref-name">Professor Dr. Sheak Rashed Haider Noori</h4>
+              <p class="ref-role">Head, Department of Computer Science and Engineering</p>
+              <p class="ref-org">Daffodil International University</p>
+              <ul class="ref-contact">
+                <li><a href="tel:+8801847140016">01847140016</a></li>
+                <li><a href="mailto:headcse@daffodilvarsity.edu.bd">headcse@daffodilvarsity.edu.bd</a></li>
+              </ul>
+            </article>
+
+            <article class="card ref">
+              <h4 class="ref-name">Mr. Md. Azizul Hakim</h4>
+              <p class="ref-role">Senior Lecturer (Study Leave), Department of Computer Science and Engineering</p>
+              <p class="ref-org">Daffodil International University</p>
+              <ul class="ref-contact">
+                <li><a href="tel:+8801673562638">+880 1673 562638</a></li>
+                <li><a href="mailto:azizul.cse@diu.edu.bd">azizul.cse@diu.edu.bd</a></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-kicker">07 &mdash; Contact</p>
+          <h2 class="section-title">Let's talk</h2>
+          <p class="section-sub">Open to cyber security roles, consulting engagements and collaboration.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info" data-reveal>
+            <ul class="contact-list">
+              <li>
+                <span class="ci-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3.6 6.4l8.4 6 8.4-6" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+                </span>
+                <span class="ci-body">
+                  <span class="ci-label">Email</span>
+                  <a class="ci-value" href="mailto:nafissalman.cse@gmail.com">nafissalman.cse@gmail.com</a>
+                </span>
+              </li>
+              <li>
+                <span class="ci-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M6.6 3.5h3l1.6 4-2 1.4a11.4 11.4 0 005.5 5.5l1.4-2 4 1.6v3a2 2 0 01-2.2 2A16.4 16.4 0 014.6 5.7 2 2 0 016.6 3.5z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="ci-body">
+                  <span class="ci-label">Phone</span>
+                  <a class="ci-value" href="tel:+8801680281293">+880 1680 281293</a>
+                </span>
+              </li>
+              <li>
+                <span class="ci-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 10-14 0c0 4.9 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+                </span>
+                <span class="ci-body">
+                  <span class="ci-label">Location</span>
+                  <span class="ci-value">Rampura, Banasree, Dhaka-1219, Bangladesh</span>
+                </span>
+              </li>
+            </ul>
+
+            <div class="card declaration">
+              <p class="decl-text">
+                &ldquo;I declare that all the information I have given in this application is true and
+                authentic.&rdquo;
+              </p>
+              <img class="decl-sign" src="assets/img/signature.jpg" width="270" height="163"
+                   alt="Handwritten signature of Md. Nafis Salman" />
+              <p class="decl-name">Md. Nafis Salman</p>
+            </div>
+          </div>
+
+          <form class="card contact-form" id="contact-form" novalidate data-reveal>
+            <p class="form-note">
+              This form opens your own email client with the message pre-filled &mdash; nothing is sent
+              to a third-party server.
+            </p>
+
+            <div class="field">
+              <label for="cf-name">Your name</label>
+              <input type="text" id="cf-name" name="name" autocomplete="name" required
+                     aria-describedby="cf-name-error" />
+              <p class="error" id="cf-name-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="cf-email">Your email</label>
+              <input type="email" id="cf-email" name="email" autocomplete="email" required
+                     aria-describedby="cf-email-error" />
+              <p class="error" id="cf-email-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="cf-subject">Subject</label>
+              <input type="text" id="cf-subject" name="subject" required
+                     aria-describedby="cf-subject-error" />
+              <p class="error" id="cf-subject-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" required
+                        aria-describedby="cf-message-error"></textarea>
+              <p class="error" id="cf-message-error" role="alert"></p>
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit">
+              Send message
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l16-7-7 16-2.2-6.8L4 12z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-text">Md. Nafis Salman</span>
+        <p class="footer-tag">Engineer, Incident Responder &mdash; Dhaka, Bangladesh</p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="assets/docs/Md_Nafis_Salman_CV.pdf" download>CV (PDF)</a></li>
+      </ul>
+
+      <p class="copyright">&copy; <span id="year">2026</span> Md. Nafis Salman. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+      <path d="M12 19V6M6 11.5L12 5.5l6 6" fill="none" stroke="currentColor"
+            stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
